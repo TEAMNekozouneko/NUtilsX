@@ -99,12 +99,5 @@
             <version>2.6.3</version>
             <scope>provided</scope>
         </dependency>
-
-        <!-- SELF  -->
-        <dependency>
-            <groupId>com.nekozouneko</groupId>
-            <artifactId>nutilsx-api</artifactId>
-            <version>${project.version}</version>
-        </dependency>
     </dependencies>
 </project>
