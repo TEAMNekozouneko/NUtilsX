@@ -11,6 +11,7 @@
         <module>api</module>
         <module>spigot</module>
         <module>bungee</module>
+        <module>common</module>
     </modules>
     <packaging>pom</packaging>
 
