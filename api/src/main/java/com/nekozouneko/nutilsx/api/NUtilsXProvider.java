@@ -1,6 +1,10 @@
-package com.nekozouneko.nutilsx;
+package com.nekozouneko.nutilsx.api;
+
+import com.nekozouneko.nutilsx.NUtilsXApi;
 
 public class NUtilsXProvider {
+
+    private NUtilsXProvider() {}
 
     private static NUtilsXApi instance = null;
 
@@ -8,11 +12,11 @@ public class NUtilsXProvider {
         return NUtilsXProvider.instance;
     }
 
-    static void registerProv(NUtilsXApi instance) {
+    static void registerApi(NUtilsXApi instance) {
         NUtilsXProvider.instance = instance;
     }
 
-    static void unregisterProv() {
+    static void unregisterApi() {
         instance = null;
     }
 
