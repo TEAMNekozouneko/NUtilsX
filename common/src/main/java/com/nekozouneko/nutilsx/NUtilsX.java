@@ -1,4 +1,14 @@
 package com.nekozouneko.nutilsx;
 
-public class NUtilsX {
+public interface NUtilsX {
+
+
+    NUtilsXApi getApi();
+
+    Platform getPlatform();
+
+    String getVersion();
+
+
+
 }
