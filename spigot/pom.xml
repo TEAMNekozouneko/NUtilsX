@@ -8,8 +8,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>nutilsx-spigot</artifactId>
-    <name>Archetype - nutilsx-spigot</name>
-    <url>http://maven.apache.org</url>
+    <name>NUtilsX - Spigot</name>
+    <url>http://github.com/TeamNekozouneko/NUtilsX</url>
 
     <dependencies>
         <dependency>

@@ -8,7 +8,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>nutilsx-bungee</artifactId>
-    <name>Archetype - nutilsx-bungee</name>
+    <name>NUtils - BungeeCord</name>
     <url>http://maven.apache.org</url>
 
     <dependencies>
