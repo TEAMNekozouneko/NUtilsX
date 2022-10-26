@@ -2,7 +2,6 @@ package com.nekozouneko.nutilsx;
 
 import com.nekozouneko.nutilsx.api.NUtilsXApiRegisterUtil;
 import com.nekozouneko.nutilsx.api.NUtilsXProvider;
-import com.nekozouneko.nutilsx.command.Test;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class NUtilsXSpigot extends JavaPlugin implements NUtilsX {
@@ -10,7 +9,7 @@ public class NUtilsXSpigot extends JavaPlugin implements NUtilsX {
     private static NUtilsXSpigot instance = null;
     private NUtilsXApi api = null;
 
-    public static NUtilsX getInstance() {
+    public static NUtilsXSpigot getInstance() {
         return instance;
     }
 
