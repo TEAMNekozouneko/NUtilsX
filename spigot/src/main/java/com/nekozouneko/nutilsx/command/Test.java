@@ -11,7 +11,7 @@ import java.util.List;
 
 public class Test implements CommandExecutor, TabCompleter {
 
-    private NUtilsXSpigot plugin = (NUtilsXSpigot) NUtilsXSpigot.getInstance();
+    private NUtilsXSpigot plugin = NUtilsXSpigot.getInstance();
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
