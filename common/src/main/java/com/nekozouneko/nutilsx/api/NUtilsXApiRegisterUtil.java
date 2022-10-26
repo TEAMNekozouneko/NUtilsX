@@ -12,14 +12,10 @@ public class NUtilsXApiRegisterUtil {
 
     static {
         try {
-            System.out.println("register");
             REGISTER = NUtilsXProvider.class.getDeclaredMethod("registerApi", NUtilsXApi.class);
-            System.out.println("sa");
             REGISTER.setAccessible(true);
 
-            System.out.println("unregister");
             UNREGISTER = NUtilsXProvider.class.getDeclaredMethod("unregisterApi");
-            System.out.println("sa");
             UNREGISTER.setAccessible(true);
         } catch (NoSuchMethodException nsm) {
             throw new ExceptionInInitializerError(nsm);
