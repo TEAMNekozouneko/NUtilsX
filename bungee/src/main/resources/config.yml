@@ -1,0 +1,21 @@
+brand:
+    # ============================================ #
+    #        >--- Custom Server Brand ---<         #
+    # | ---------------------------------------- | #
+    # | Edit server brand (Shows F3 debug)       | #
+    # | ---------------------------------------- | #
+    #                                              #
+    # Placeholders:                                #
+    # - %proxy_brand%  - Proxy brand name          #
+    # - %server_brand% - Child server brand name   #
+    # - %server_name%  - Child server name         #
+    # - %player_name%  - Player name               #
+    #                                              #
+    # ============================================ #
+
+    enabled: false
+    interval: 3
+    lines:
+        - '%proxy_brand% &7<-&r %server_name% &7(%server_brand%)'
+
+
