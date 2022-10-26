@@ -2,7 +2,6 @@ package com.nekozouneko.nutilsx;
 
 import com.nekozouneko.nutilsx.api.NUtilsXApiRegisterUtil;
 import com.nekozouneko.nutilsx.api.NUtilsXProvider;
-import com.nekozouneko.nutilsx.command.Test;
 import net.md_5.bungee.api.plugin.Plugin;
 
 public class NUtilsXBungee extends Plugin implements NUtilsX {
