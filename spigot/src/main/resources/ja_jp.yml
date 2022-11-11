@@ -1,0 +1,30 @@
+nutilsx:
+    language-property:
+        authors: ["Taitaitatata"]
+        lang: ja
+        client-lang: ja_jp
+        official: true
+        version: 0
+
+    lang:
+        prefix: "&7[&bNUtils&f&lX&7] &r"
+
+        command:
+            gamemode:
+                self: "ゲームモードを{0}モードに変更しました。"
+                other: "{0}のゲームモードを{1}モードに変更しました。"
+
+                usage: "/gamemode (<a|adventure|c|creative|s|sp|spectator|survival>|<gamemode>) [<target>]"
+
+        common:
+            gamemode:
+                adventure: "アドベンチャー"
+                creative: "クリエイティブ"
+                spectator: "スペクテイター"
+                survival: "サバイバル"
+
+            error:
+                show-usage: "&c使用方法: &7{0}"
+                permission: "&c権限が不足しています。"
+                incorrect-arg: "&cコマンドの引数の入力が正しくありません"
+                player-not-found: "&cそのようなプレイヤーが見つかりませんでした。"
