@@ -56,12 +56,6 @@
                 <version>3.0.0-M7</version>
             </plugin>
         </plugins>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <filtering>true</filtering>
-            </resource>
-        </resources>
     </build>
 
     <repositories>
@@ -85,6 +79,10 @@
         <repository>
             <id>viaversion-repo</id>
             <url>https://repo.viaversion.com</url>
+        </repository>
+        <repository>
+            <id>minecraft-libraries</id>
+            <url>https://libraries.minecraft.net</url>
         </repository>
     </repositories>
 
