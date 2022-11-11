@@ -14,4 +14,10 @@ public interface NUtilsXApi {
      */
     Platform getPlatform();
 
+    /**
+     * Get NUtilsX Uptime
+     * @return Uptime seconds
+     */
+    long getUptime();
+
 }
