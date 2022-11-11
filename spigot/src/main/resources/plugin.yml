@@ -1,13 +1,33 @@
 name: NUtilsX
-version: '${project.version}'
+version: "${project.parent.version}"
 main: com.nekozouneko.nutilsx.NUtilsXSpigot
 api-version: 1.13
 authors: [ Taitaitatata ]
 description: NUtilsの書き直しバージョンです。仕組み全部を書き直し色々なユーティリティやデバッガーを提供します。
 
-#commands:
+commands:
 #    test:
 #        aliases: []
 #        description: "Test"
 #        permission: "nutilsx.command.test"
 #        usage: "/<command>"
+    gamemode:
+        aliases: ["gm"]
+        permission: "nutilsx.command.gamemode"
+
+permissions:
+    nutilsx:
+        children:
+            - nutilsx.command
+        default: op
+        description: "NUtilsX root permission"
+
+    nutilsx.command:
+        children:
+            - nutilsx.command.gamemode
+        default: op
+        description: "NUtilsX all command permissions"
+
+    nutilsx.command.gamemode:
+        default: op
+        description: "NUtilsX gamemode command permission"
