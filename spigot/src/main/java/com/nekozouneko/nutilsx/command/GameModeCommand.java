@@ -1,5 +1,6 @@
 package com.nekozouneko.nutilsx.command;
 
+import com.mojang.brigadier.tree.LiteralCommandNode;
 import com.nekozouneko.nutilsx.NUtilsXSpigot;
 import static com.nekozouneko.nutilsx.Util.*;
 
@@ -11,7 +12,10 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabCompleter;
 import org.bukkit.entity.Player;
+import me.lucko.commodore.file.CommodoreFileReader;
+import org.bukkit.plugin.Plugin;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -82,6 +86,11 @@ public class GameModeCommand implements CommandExecutor , TabCompleter {
         return tab;
     }
 
-
+    public static void registerBrigadier(Plugin plugin, Command cmd) {
+        try {
+            LiteralCommandNode<?> GameModeCommand = CommodoreFileReader.INSTANCE.parse(plugin.getResource("gamemode.commodore"));
+            NUtilsXSpigot.getCommodore().register(cmd, GameModeCommand);
+        } catch (IOException ignored) {}
+    }
 
 }
