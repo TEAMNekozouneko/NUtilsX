@@ -8,5 +8,5 @@ public interface NUtilsX {
 
     String getVersion();
 
-
+    long getStartUpTime();
 }

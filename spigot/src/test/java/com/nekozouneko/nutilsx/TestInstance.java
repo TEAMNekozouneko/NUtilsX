@@ -31,4 +31,9 @@ public class TestInstance implements NUtilsX {
     public String getVersion() {
         return "Test";
     }
+
+    @Override
+    public long getStartUpTime() {
+        return 0;
+    }
 }

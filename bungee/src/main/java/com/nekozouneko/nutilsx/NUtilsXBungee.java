@@ -8,9 +8,15 @@ public class NUtilsXBungee extends Plugin implements NUtilsX {
 
     private static NUtilsX instance = null;
     private NUtilsXApi api = null;
+    private long startedTime = 0L;
 
     public static NUtilsX getInstance() {
         return instance;
+    }
+
+    @Override
+    public void onLoad() {
+        this.startedTime = System.currentTimeMillis()/1000L;
     }
 
     @Override
@@ -18,6 +24,7 @@ public class NUtilsXBungee extends Plugin implements NUtilsX {
         NUtilsXBungee.instance = this;
         NUtilsXApiRegisterUtil.registerProv(this);
         this.api = NUtilsXProvider.get();
+
 
         //getProxy().getPluginManager().registerCommand(this, new Test());
     }
@@ -42,5 +49,10 @@ public class NUtilsXBungee extends Plugin implements NUtilsX {
     @Override
     public String getVersion() {
         return getDescription().getVersion();
+    }
+
+    @Override
+    public long getStartUpTime() {
+        return this.startedTime;
     }
 }
