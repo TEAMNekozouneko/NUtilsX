@@ -111,9 +111,7 @@ public class Util {
 
     /**
      * {@link net.md_5.bungee.api.ChatColor#translateAlternateColorCodes(char, String) ChatColor.translateAlternateColorCodes()}
-     * にMinecraft 1.16に実装されたHEXカラーを対応させたものです。<br>
-     * <br>
-     * {@link #replaceColorCode(char, String)} の省略です。'&' が代替コードとして定義されています
+     * にMinecraft 1.16に実装されたHEXカラーを対応させたものです。
      * @param s 代替の色コードを含む文字列
      * @return 代替の色コードを '\u00A7' に置き換えた文字列
      * @see net.md_5.bungee.api.ChatColor#translateAlternateColorCodes(char, String)

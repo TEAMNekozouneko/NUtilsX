@@ -28,8 +28,10 @@ jobs:
             - name: "Build"
               run: mvn clean install
 
-            - name: "Upload artifacts"
+            - name: "Upload artifacts ( ${{ matrix.java }} )"
               uses: actions/upload-artifact@v3.1.1
               with:
-                  name: "Target dirs"
-                  path: "*/target/*"
+                  name: "Target dirs ( ${{ matrix.java }} )"
+                  path: |
+                    ./*/target/*
+                    ./*/javadoc/*
